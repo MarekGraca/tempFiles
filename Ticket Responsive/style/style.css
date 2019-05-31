@@ -1,0 +1,149 @@
+body{
+  background-color: #ff6600;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+.buttons{
+  text-align: center;
+  width: 250px;
+  margin-top: 7px;
+  background-color:#ff6600;
+  border: 1px white solid;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.buttons:hover{
+ background-color: white;
+ border: 1px solid #4CAF50;
+ color:#ff6600;
+}
+.clear{
+  clear: both;
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+header{
+padding-top: 5vh;
+}
+header #img_1{
+  width: 15vw;
+  float: left;
+}
+header #img_2{
+  width: 7vw;
+  float: right;
+}
+header h1{
+  float: left;
+  text-transform: uppercase;
+  padding-left: 12vw;
+  font-size: 50px;
+  margin: 0;
+}
+.container_half{
+  width: 50%;
+  height: auto;
+  float: left;
+}
+#service .containerTickets{
+  width: 70%;
+  text-align: center;
+}
+#service .containerWorkers{
+  width: 70%;
+}
+#service #span1{
+  float: left;
+  width: 100%;
+}
+#service #span2{
+  float: right;
+}
+#service .containerButtons{
+  width: 100%;
+}
+#service .containerButtons .buttons{
+  width: 200px;
+}
+#service #workers_result .inputs{
+  width: 50%;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+}
+
+
+#service #workers_result p{
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+#service #workers_result .buttons{
+  width: 30%;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px;
+}
+#service .inputs{
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+.container #outputAssigment{
+  font-size: 20px;
+}
+
+
+@media(max-width: 768px){
+  .container_workers_result{
+
+  }
+  header h1,
+  header #img_1,
+  header #img_2{
+    float: none;
+  }
+  header #img_1{
+    width: 50vw;
+  }
+  header #img_2{
+    width: 50vw;
+  }
+  header h1{
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
+  header .container, #service .container, #service .containerWorkers {
+    width: 100%;
+    text-align: center;
+  }
+  #service .container_half, #service .containerTickets{
+    float: none;
+    width: 100%;
+  }
+  #service input, #service .buttons, #service .containerButtons .buttons{
+    width: 100%;
+  }
+  #service #workers_result li{
+    display: block;
+  }
+
+}

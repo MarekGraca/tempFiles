@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Template</title>
+  <link rel="stylesheet" href="Template_pliki/style.css">
+</head>
+<body>
+
+  <section class="intro">
+    <div class="container">
+      <h1>Ceny walut oraz kryptowalut.</h1>
+      <ul>
+        <li><a href="#" id="home" style="font-weight: bold;">Home</a></li>
+        <li><a href="#" id="searchCur" style="font-weight: normal;">Szukaj waluty</a></li>
+        <li><a href="" id="searchCrypto">Szukaj kryptowaluty</a></li>
+        <li><a href="#" id="goldPrice">Cena złota</a></li>
+        <li><a href="#">Przelicz waluty</a></li>
+        <li><a href="#">Przelicz kryptowaluty</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="second_section">
+    <div class="container">
+      <div id="section_one" style="display: block;">
+        <div class="container_output1">
+          <p>Ceny walut z dnia: <span id="output1">2019-03-14</span></p>
+          <p id="output2"><span class="span1"> dolar amerykański</span> <span class="span2"> 3.7658</span><br><span class="span1"> dolar australijski</span> <span class="span2"> 2.6619</span><br><span class="span1"> dolar kanadyjski</span> <span class="span2"> 2.8264</span><br><span class="span1"> euro</span> <span class="span2"> 4.2574</span><br><span class="span1"> forint (Węgry)</span> <span class="span2"> 0.01353</span><br><span class="span1"> frank szwajcarski</span> <span class="span2"> 3.7426</span><br><span class="span1"> funt szterling</span> <span class="span2"> 4.9638</span><br><span class="span1"> jen (Japonia)</span> <span class="span2"> 0.033821</span><br><span class="span1"> korona czeska</span> <span class="span2"> 0.1659</span><br><span class="span1"> korona duńska</span> <span class="span2"> 0.5706</span><br><span class="span1"> korona norweska</span> <span class="span2"> 0.4382</span><br><span class="span1"> korona szwedzka</span> <span class="span2"> 0.4038</span><br><span class="span1"> SDR (MFW)</span> <span class="span2"> 5.242</span><br></p>
+        </div>
+        <div class="container_output2">
+          <p>Dzisiejsza cena złota (zł):</p>
+          <p id="output3">160</p>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div id="search" style="display: none;">
+        <p>Wprowadź nazwę waluty</p>
+        <input id="currency_name_code" value="crc" type="text"><br>
+        <form>
+         <input name="currencyCheckbox" value="code" id="check1" type="radio"> Kod waluty<br>
+         <input name="currencyCheckbox" value="name" id="check2" checked="checked" type="radio"> Nazwa waluty<br>
+       </form>
+        <button type="button" id="searchCurrencyButton">Szukaj</button>
+        <p id="output5">Znaleziono: <p> colon kostarykański </p><p></p></p>
+        <p id="output6">Cena waluty to 0.006298 złoty</p>
+        <p id="outputError"></p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="footer">
+
+  </footer>
+
+  <script src="Template_pliki/script.js">
+
+  </script>
+
+
+</body></html>

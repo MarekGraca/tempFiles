@@ -1,0 +1,57 @@
+header {
+  text-align: center;
+}
+.container{
+  width: 80%;
+  margin: auto;
+
+}
+.img_container{
+  width: 30%;
+  height: 30%;
+  overflow: hidden;
+  float: left;
+}
+.containerSmall{
+  width: 55%;
+  margin: auto;
+}
+#select{
+  text-align: center;
+}
+#select img{
+  width:100%;
+  height: 200px;
+  float: left;
+}
+#select input{
+  border-radius: 5px;
+}
+
+#select img:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+#select input,button{
+  margin-top: 50px;
+  width: 50%;
+  height: 40px;
+  border-radius: 5px;
+}
+.output{
+  text-align: center;
+  width: 50%;
+  height: 70vh;
+  margin: auto;
+  overflow: hidden;
+  background-size: cover;
+}
+.output img{
+  width: 400px;
+  height: auto;
+}
+.output p{
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}

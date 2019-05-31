@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Orange Ticket Generator</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body onload="fetchWorkers()">
+
+
+  <div id="containerAll">
+    <header>
+      <div class="container">
+        <img src="images/logo.jpg" alt="" id="img_1">
+        <div class="h1_container">
+          <h1>work assigment app</h1>
+        </div>
+        <img src="images/ourway.jpg" alt="" id="img_2">
+      </div>
+    </header>
+
+    <div class="clear"></div>
+
+    <section id="service">
+      <div class="container">
+        <div class="container_half">
+          <div class="containerTickets">
+          <h1>Input workers for Quality Control</h1>
+          <input class="inputs" type="text" placeholder="Worker name or ID " onfocus="this.value=''" id="workerNameInp"><br>
+          <button type="button" class="buttons"  id="confirmWorker">Confirm and Save</button><br>
+          </div>
+          <div class="containerWorkers">
+            <div class="container_workers_result">
+              <div id="workers_result"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container_half">
+          <div class="containerTickets">
+            <h1>Enter Projects</h1>
+            <input class="inputs" type="text" placeholder="Project name or OPP adress " onfocus="this.value=''" id="ticketName"><br>
+            <button type="button" class="buttons" onclick="addTickets()" id="confirmTicket">Confirm</button><br>
+            <input class="inputs" type="number" value="" min="1" id= "myNumber"><br>
+            <button type="button" class="buttons" onclick="deleteTicket()">Delete number</button><br>
+            <button type="button" class="buttons" id="modify" onclick="modifyTicket()">Modify number</button><br>
+            <button type="button" class="buttons" onclick="deleteTickets()">Delete all</button><br>
+            <input class="inputs" type="number" id="allocateNumber" placeholder="Tickets for workers" value="" min="1">
+            <div class="containerButtons">
+              <button type="button" class="buttons" onclick="assignTicketToWorkers()" id="start">Equal amount</button>
+              <button type="button" class="buttons" onclick="assignTicketToWorkersSpecific()" id="">Specific amount</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="clear"></div>
+
+    <section id="footer">
+      <div class="container">
+        <p id="outputTicket"></p>
+      </div>
+    </section>
+
+</div>
+
+  <div class="container">
+    <p id="outputAssigment"></p>
+  </div>
+
+  <script type="text/javascript" src="script/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Waluty oraz kryptowaluty</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+  <section class="intro">
+    <div class="container">
+      <h1>Ceny walut oraz kryptowalut.</h1>
+      <ul id="nav_list">
+        <li><a href="#" id="s1">Home</a></li>
+        <li><a href="#" id="s2">Dodaj walutę</a></li>
+        <li><a href="#" id="s3">Przelicz waluty</a></li>
+        <li><a href="#" id="s4">Cena złota</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="second_section">
+    <div class="b_g"></div>
+    <div class="container">
+      <div class="containeroutput">
+        <div id="section_one" class="section">
+          <div id="section_one_output"></div>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div id="searchSection" class="section">
+        <h1>Wprowadź kod waluty</h1>
+          <select id="outputCodes"></select>
+          <button type="button" id="searchCurrencyButton">Dodaj</button>
+
+        <!-- <button type="button" id="removeLocal">Remove</button> -->
+
+        <p id="outputError"></p>
+      </div>
+
+      <div id="calculate_section" class="section">
+        <h1>Wprowadź pierwszą walutę:</h1>
+        <select id="currency1"></select>
+        <h1>Wprowadź ilość:</h1>
+        <input type="text" id="currency1value"><br>
+        <h1>Wprowadź drugą walutę:</h1>
+        <select id="currency2"></select>
+        <button type="button" id="calculateButton">Przelicz</button><br>
+        <h1 id="outputCalculatedValue"></h1>
+      </div>
+
+      <div id="gold_section" class="section">
+
+        <h1>Dzisiejsza cena złota:<br>
+        (pr.1000-24K)</h1>
+        <p id="gold_output"></p>
+
+        <h2>Sprawdź cenę złota w konkretnym dniu</h2>
+        <input id="date" type="date"><br>
+        <button type="button" id="date_button">Sprawdź</button>
+        <p id="gold_output1"></p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="third_section">
+
+    <div class="container">
+      <div class="boxes">
+        <div class="box">
+          <i class="fab fa-bitcoin fa-7x" ></i>
+        </div>
+        <div class="box">
+          <i class="fas fa-dollar-sign fa-7x"></i>
+        </div>
+        <div class="box">
+          <i class="fas fa-euro-sign fa-7x"></i>
+        </div>
+        <div class="box">
+          <i class="fas fa-yen-sign fa-7x"></i>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer id="footer">
+    <p>Marek Graca JavaScript Developer, Copyright &copy; 2019</p>
+  </footer>
+
+  <script src="script/script.js">
+
+  </script>
+</body>
+</html>
